@@ -1,43 +1,26 @@
-Student,ID,Netid,SIS Login ID,Section,Assignments Current Points,Assignments Final Points,Assignments Current Score,Assignments Unposted Current Score,Assignments Final Score,Assignments Unposted Final Score,Current Points,Final Points,Current Score,Unposted Current Score,Final Score,Unposted Final Score,Current Grade,Unposted Current Grade,Final Grade,Unposted Final Grade
-"Anderson, Cate",44405,cander35,cander35,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Armenta, Alan",45641,aarment2,aarment2,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Bartek, Evan",44580,ebartek,ebartek,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Briamonte, Mary",44292,mbriamon,mbriamon,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Cao, Luke",45546,lcao3,lcao3,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Co, Sadie",46079,sco,sco,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Crosby, Kyle",45540,acrosby2,acrosby2,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"De La Paz, Emmanuel",45577,edelapaz,edelapaz,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"De Leon, Cesar",44938,cdeleon2,cdeleon2,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Delp, Trenton",35327,tdelp,tdelp,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Devareddy, Sajith",45998,sdevared,sdevared,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Dougherty, Sean",34588,sdoughe5,sdoughe5,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Drake, Francis",45649,fdrake,fdrake,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Dungan, Lauren",33883,ldungan,ldungan,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Eleazar, Matthew",35551,meleazar,meleazar,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Exley, Grant",44306,gexley,gexley,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Huss, Daniel",45914,dhuss,dhuss,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Jafri, Mariam",45078,mjafri,mjafri,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Johan, Daniel",44772,djohan,djohan,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Kennedy, Zach",46046,zkennedy,zkennedy,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Koran, Ethan",45872,ekoran,ekoran,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Lee, Henry",45181,hlee26,hlee26,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Leon-Cigarroa, Michelle",29171,mleoncig,mleoncig,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"McNelis, Megan",34428,mmcnelis,mmcnelis,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Morales, Nicolas",46113,nmorale2,nmorale2,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Nahm, Ryan",44706,rnahm,rnahm,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Noonan, Sophia",44898,snoonan2,snoonan2,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Norton, Nancy",36391,nnorton2,nnorton2,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Pierret, Olivia",45867,opierret,opierret,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Pineda Miguel, Melvin",44453,mpinedam,mpinedam,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Quigley, Sean",44730,squigle2,squigle2,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Rauguth, Conner",34831,crauguth,crauguth,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Simmons, David",45961,dsimmon4,dsimmon4,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Sorenson, Michael",46044,msorenso,msorenso,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Sullivan, Molly",31429,msulli52,msulli52,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Turzai, Matthew",34483,mturzai,mturzai,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Wardeh, Layann",44997,lwardeh,lwardeh,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Williams, Kam",45096,kwilli33,kwilli33,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Yoo, Dan",28553,hyoo,hyoo,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Zhao, Annie",34739,azhao3,azhao3,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Zharima, Macdonald",44431,mzharima,mzharima,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
-"Zitella, Madeline",29214,mzitella,mzitella,FA24-CSE-30872-01,,,,,,,,,,,,,,,,
+Student,ID,SIS User ID,SIS Login ID,Section,Reading 00 (342102),Reading 01 (342103),Reading 02 (342104),Reading 03 (342105),Reading 04 (342106),Reading 05 (342107),Reading 06 (342108),Reading 07 (342109),Reading 08 (342110),Reading 09 (342111),Reading 10 (342112),Reading 11 (342113),Challenge 00 (342073),Challenge 01 (342074),Challenge 02 (342075),Challenge 03 (342076),Challenge 04 (342077),Challenge 05 (342078),Challenge 06 (342080),Challenge 07 (342081),Challenge 08 (342082),Challenge 09 (342083),Challenge 10 (342084),Challenge 11 (342085),Challenge 12 (342086),Challenge 13 (342087),Challenge 14 (342088),Challenge 15 (342089),Challenge 16 (342090),Challenge 17 (342091),Challenge 18 (342092),Challenge 19 (342093),Challenge 20 (342094),Challenge 21 (342095),Challenge 22 (342096),Challenge 23 (342097),Contest 1 (342098),Contest 2 (342099),External 01 (342100),External 02 (342101),Assignments Current Points,Assignments Final Points,Assignments Current Score,Assignments Unposted Current Score,Assignments Final Score,Assignments Unposted Final Score,Readings Current Points,Readings Final Points,Readings Current Score,Readings Unposted Current Score,Readings Final Score,Readings Unposted Final Score,Challenges Current Points,Challenges Final Points,Challenges Current Score,Challenges Unposted Current Score,Challenges Final Score,Challenges Unposted Final Score,Contests Current Points,Contests Final Points,Contests Current Score,Contests Unposted Current Score,Contests Final Score,Contests Unposted Final Score,Externals Current Points,Externals Final Points,Externals Current Score,Externals Unposted Current Score,Externals Final Score,Externals Unposted Final Score,Current Points,Final Points,Current Score,Unposted Current Score,Final Score,Unposted Final Score,Current Grade,Unposted Current Grade,Final Grade,Unposted Final Grade
+    Points Possible,,,,,3.00,3.00,3.00,3.00,3.00,3.00,3.00,3.00,3.00,3.00,3.00,3.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,7.00,36.00,36.00,17.00,17.00,(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only)
+"Basabanda, Jordan",46122,jbasaban,jbasaban,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Bittar, Alex",44934,abittar,abittar,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Brown, Declan",33767,dbrown39,dbrown39,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Daly, Matt",35123,mdaly22,mdaly22,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"DeWane, Erich",37436,edewane2,edewane2,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Diniz Wunderlich, Mirella",45185,mdinizwu,mdinizwu,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Graves, Max",45388,mgraves4,mgraves4,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Groome, Aaron",74075,agroome,agroome,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Guenthner, Luke",48402,lguenth2,lguenth2,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Hynes, Quinn",46896,qhynes,qhynes,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Islam-Gomes, Arvin",37181,aislamg2,aislamg2,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Kashoko, Mwayi",45937,mkashoko,mkashoko,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Kotsen, Caz",45054,ckotsen,ckotsen,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Kurama, Arda",58730,akurama2,akurama2,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Lewis, Aaron",45256,alewis25,alewis25,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Li, Lang",45275,lli28,lli28,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Lindell, James",35007,jlindel2,jlindel2,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Melotik, Alicia",57551,amelotik,amelotik,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Monterola, Sam",46109,smontero,smontero,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Nelson, Sofia",35306,snelso24,snelso24,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Okor, Elo",34198,eokor,eokor,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Robbins, Will",34657,wrobbins,wrobbins,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Shin, Tristan",45580,tshin3,tshin3,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
+"Thomas, Solomon",37476,sthoma25,sthoma25,SP25-CSE-30872-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.00,0.00,,,,,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,0.00,0.00,,,0.00,0.00,,,F,F
