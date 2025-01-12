@@ -1,0 +1,632 @@
+title:      Programming Challenges
+icon:       fa-gavel
+navigation:
+    - name: "Logistics"
+      link: "#logistics"
+      icon: "fa-cogs"
+    - name: "Schedule"
+      link: "#schedule"
+      icon: "fa-calendar"
+    - name: "Requirements"
+      link: "#Requirements"
+      icon: "fa-balance-scale"
+    - name: "Resources"
+      link: "#resources"
+      icon: "fa-external-link"
+internal:
+external:
+    tas:        'static/yaml/tas.yaml'
+    schedule:   'static/yaml/schedule.yaml'
+body:       |
+
+    <div class="row" markdown="1">
+
+    **CSE 30872** is an elective course in the [Computer Science and
+    Engineering] program at the [University of Notre Dame].  This course
+    encourages the development of practical programming and problem solving
+    skills through extensive practice and guided learning. The bulk of the
+    class revolves around solving *brain-teaser* and *puzzle-type* problems
+    that often appear in programming contests, online challenges, and job
+    interviews.  Additionally, basic software engineering practices such as
+    planning, debugging, testing, and source code management may be discussed.
+
+    [Computer Science and Engineering]:     http://cse.nd.edu
+    [University of Notre Dame]:             http://www.nd.edu
+
+    </div>
+
+    <img src="static/img/icpclogo.png" class="pull-right" style="margin-left: 10px;"/>
+
+    <div class="row" markdown="1">
+
+    Upon successful completion of this course, students will be able to:
+
+    1. **Parse** a variety of inputs and model problems.
+
+    2. **Utilize** appropriate data structures to represent and solve problems.
+
+    3. **Implement** common problem solving techniques and algorithms.
+
+    4. **Employ** modern software development methods and tools.
+
+    5. **Debug** and **test** code within an automated testing environment.
+
+    </div>
+
+    <div class="row">
+        <div class="page-header">
+            <h2 id="logistics"><i class="fa fa-cogs"></i> Logistics</h2>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-6">
+    <div class="row">
+    <div class="col-md-6">
+        <h3>Class Information</h3>
+        <dl>
+            <dt><i class="fa fa-clock-o"></i> Lecture</dt>
+            <dd><strong>M/W/F</strong> 11:30 AM - 12:20 PM</dd>
+
+            <dt><i class="fa fa-home"></i> Location</dt>
+            <dd>208 DeBart</dd>
+
+            <dt><i class="fa fa-video-camera"></i> Zoom Meeting</dt>
+            <dd><a href="https://notredame.zoom.us/j/6862905283">686 290 5283</a></dd>
+
+            <dt><i class="fa fa-envelope"></i> Mailing List (Class)</dt>
+            <dd><a href="mailto:fa24-cse-30872-01-group@nd.edu">fa24-cse-30872-01-group@nd.edu</a></dd>
+
+            <dt><i class="fa fa-envelope"></i> Mailing List (Staff)</dt>
+            <dd><a href="mailto:fa24-cse-30872-01-staff-list@nd.edu">fa24-cse-30872-01-staff-list@nd.edu</a></dd>
+
+            <dt><i class="fa fa-slack"></i> Slack</dt>
+            <dd><a href="https://nd-cse.slack.com/messages/cse-30872-fa24/">#cse-30872-fa24</a></dd>
+
+            <dt><i class="fa fa-github"></i> GitHub</dt>
+            <dd><a href="https://www.github.com/nd-cse-30872-fa24/">nd-cse-30872-fa24</a></dd>
+        </dl>
+    </div>
+
+    <div class="col-md-6">
+        <h3>Instructor</h3>
+
+        <dl>
+            <dt><i class="fa fa-user"></i> Instructor</dt>
+            <dd><a href="http://williamtheisen.com">Bill Theisen</a> (<a href="mailto:pbui@nd.edu">wtheisen@nd.edu</a>)</dd>
+
+            <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+            <dd><strong>T/TR</strong> 10:00 AM - 3:00 PM, and by <strong>appointment</strong></dd>
+
+            <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+            <dd>356B Fitz</dd>
+        </dl>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-6">
+        <h3>Teaching Assistants</h3>
+
+        <div class="row">
+            {% for index, ta in enumerate(sorted(page.external['tas'], key=lambda ta: ta['name'].split()[-1])) %}
+            <div class="col-md-4">
+                <dl>
+                  <dt><i class="fa fa-user"></i> Teaching Assistant</dt>
+                  <dd>{{ ta['name'] }} (<a href="mailto:{{ ta['netid'] }}@nd.edu">{{ ta['netid'] }}@nd.edu</a>)</dd>
+                  <!--
+                  <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
+                  <dd>{{ ta.get('hours', 'TBD') }}</dd>
+                  <dt><i class="fa fa-briefcase"></i> Office Location</dt>
+                  <dd>{{ ta.get('location', 'TBD') }}</dd>
+                  //-->
+                </dl>
+            </div>
+
+            {% if (index + 1) % 3 == 0 %}
+            </div><div class="row">
+            {% end %}
+            {% end %}
+        </div>
+        <div class="row">
+            <div class="alert alert-info">
+                <h4><i class="fa fa-question"></i> Help Protocol</h4>
+                <ol class="list-inline">
+                    <li><em><i class="fa fa-lightbulb-o"></i> Think</em></li>
+                    <li><small><i class="fa fa-arrow-right"></i></small></li>
+                    <li><strong><i class="fa fa-slack"></i> Slack</strong></li>
+                    <li><small><i class="fa fa-arrow-right"></i></small></li>
+                    <li><em><i class="fa fa-lightbulb-o"></i> Think</em></li>
+                    <li><small><i class="fa fa-arrow-right"></i></small></li>
+                    <li><strong><i class="fa fa-envelope"></i> Email</strong></li>
+                    <li><small><i class="fa fa-arrow-right"></i></small></li>
+                    <li><em><i class="fa fa-lightbulb-o"></i> Think</em></li>
+                    <li><small><i class="fa fa-arrow-right"></i></small></li>
+                    <li><strong><i class="fa fa-briefcase"></i> Office</strong></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row" markdown="1">
+      <div class="col-md-12">
+        <h3>Office Hours</h3>
+        <div class="thumbnail">
+            <img src="static/img/office-hours.png">
+        </div>
+      <div>
+      <div class="alert alert-success" markdown="1">
+      <h4><i class="fa fa-video-camera"></i> Online Office Hours</h4>
+
+      Online office hours for the teaching assistants will take place in <a
+      href="https://notredame.zoom.us/j/6862905283">Zoom Meeting 686 290
+      5283</a>.
+
+      Please use the main session for <b>general</b> questions.  If you have an
+      <b>individual</b> question, then request a private <b>breakout room</b>
+      with the teaching assistant.
+
+      If you need more individualized attention, please contact the
+      <b>instructor</b> to schedule an <b>appointment</b>.
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="page-header">
+            <h2 id="schedule"><i class="fa fa-calendar"></i> Schedule</h2>
+        </div>
+    </div>
+
+    <style>
+    table.schedule td.unit {
+        background-color: #fff;
+        border-right: 2px solid #ddd;
+        text-align: right;
+        width: 175px;
+        vertical-align: middle;
+    }
+    </style>
+
+    <div class="row">
+        <table class="table condensed table-striped schedule">
+            <thead>
+                <tr>
+                    <th class="text-center">Unit</th>
+                    <th class="text-center" style="width: 100px;">Date</th>
+                    <th class="text-center">Topics</th>
+                    <th class="text-center" style="width: 275px;">Assignments</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for theme in page.external['schedule'] %}
+                {% if not theme.get('days') %}
+                  <tr>
+                  <td colspan="4" class="text-center text-strong" style="border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; padding: 4px;">{{ theme['name'] }}</td>
+                  </tr>
+                  {% continue %}
+                {% end %}
+
+                {% for index, day in enumerate(theme['days']) %}
+                <tr>
+                {% if index == 0 %}
+                    <td rowspan="{{ len(theme['days']) }}" class="text-strong text-primary text-center unit">{{ theme['name'] }}</td>
+                {% end %}
+                    <td class="text-center text-strong"><tt>{{ day['date'] }}</tt></td>
+                    <td class="text-strong">
+                    {% if 'topics' in day %}
+                      {% if day['topics'] == 'Office Hours' or day['topics'] == 'Cancelled' %}
+                      <i class="text-muted">{{ day.get('topics', '') }}</i>
+                      {% else %}
+                      {{ day.get('topics', '') }}
+                      {% end %}
+                    {% else %}
+                      <i class="text-muted">Programming Challenges</i>
+                    {% end %}
+                    {% for item in day.get('items', []) %}
+                    {% if item['name'].lower().startswith('contest') %}
+                      {% set item['label'] = 'danger' %}
+                    {% elif item['name'].lower().startswith('panopto') %}
+                      {% set item['label'] = 'success' %}
+                    {% else %}
+                      {% set item['label'] = 'default' %}
+                    {% end %}
+                    {% if 'link' in item %}
+                      <a class="label label-{{ item['label'] }}" href="{{ item['link'] }}">{{ item['name'] }}</a>
+                    {% else %}
+                      <span class="label label-{{ item['label'] }}">{{ item['name'] }}</span>
+                    {% end %}
+                    {% end %}
+                    </td>
+                    <td class="text-strong text-center">
+                    {% for assignment in day.get('assignments', []) %}
+                      {% set assignment_id = ''.join(assignment.lower().split()) %}
+                      {% if assignment_id.startswith('reading') %}
+                        {% set assignment_label = 'primary' %}
+                      {% else %}
+                        {% set assignment_label = 'caution' %}
+                      {% end %}
+                      <a href="{{ assignment_id }}.html" class="label label-{{ assignment_label }}">{{ assignment }}</a>
+                    {% end %}
+                    </td>
+                </tr>
+                {% end %}
+                {% end %}
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="page-header">
+            <h2 id="Requirements"><i class="fa fa-balance-scale"></i> Requirements</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+        <h3>Coursework</h3>
+        <table class="table table-condensed table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th class="text-center">Component</th>
+                    <th class="text-center">Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="label label-primary">Readings</span> Weekly reading assignments.</td>
+                    <td class="text-center">11 &times; 3</td>
+                </tr>
+                <tr>
+                    <td><span class="label label-caution">Challenges</span> Weekly programming challenges.</td>
+                    <td class="text-center">23 &times; 7</td>
+                </tr>
+                <tr>
+                    <td><span class="label label-info">Externals</span> Practice Interview</td>
+                    <td class="text-center">2 &times; 17</td>
+                </tr>
+                <tr>
+                    <td><span class="label label-danger">Contests</span> In-class programming contests.</td>
+                    <td class="text-center">2 &times; 36</td>
+                </tr>
+                <tr>
+                    <td class="text-strong text-right">Total</td>
+                    <td class="text-strong text-center">300</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="col-md-6">
+        <h3>Grading</h3>
+        <table class="table table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Grade</th>
+                    <th class="text-center">Points</th>
+                    <th class="text-center">Grade</th>
+                    <th class="text-center">Points</th>
+                    <th class="text-center">Grade</th>
+                    <th class="text-center">Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="success">
+                    <td></td>
+                    <td></td>
+                    <td class="text-center text-strong">A</td>
+                    <td class="text-center">285-300</td>
+                    <td class="text-center text-strong">A-</td>
+                    <td class="text-center">270-284</td>
+                </tr>
+                <tr class="info">
+                    <td class="text-center text-strong">B+</td>
+                    <td class="text-center">260-269</td>
+                    <td class="text-center text-strong">B</td>
+                    <td class="text-center">250-259</td>
+                    <td class="text-center text-strong">B-</td>
+                    <td class="text-center">240-249</td>
+                </tr>
+                <tr class="warning">
+                    <td class="text-center text-strong">C+</td>
+                    <td class="text-center">230-239</td>
+                    <td class="text-center text-strong">C</td>
+                    <td class="text-center">220-229</td>
+                    <td class="text-center text-strong">C-</td>
+                    <td class="text-center">210-219</td>
+                </tr>
+                <tr class="danger">
+                    <td class="text-center text-strong">D</td>
+                    <td class="text-center">195-209</td>
+                    <td class="text-center text-strong">F</td>
+                    <td class="text-center">0-194</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="alert alert-info">
+                <h4><i class="fa fa-calendar"></i> Due Dates</h4>
+                <p>
+                All <b>Readings</b> and <b>Challenges</b> are to be
+                  submitted to your own <b>private</b> <a
+                  href="https://github.com">GitHub</a> repository.  Unless
+                  specified otherwise:
+                </p>
+                <p>
+                <ul>
+                <li><p><b>Readings</b> are due <b>before class</b> on the <b>Monday</b> of each week.</p></li>
+                <li><p><b>Challenges</b> are due at <b>midnight</b> on the <b>Sunday</b> of each week.</p></li>
+                </ul>
+                </p>
+                <p>
+                The <b>Practice Interview</b> submissions are due at <b>noon</b> on <b>Wednesday, December 7</b>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          <h3>Policies</h3>
+          <div class="row">
+              <div class="col-md-4">
+              <h4>Participation</h4>
+              <p>
+              Students are expected to attend and contribute regularly in class. This
+              means answering questions in class, participating in discussions, and
+              helping other students.
+              </p>
+              <p>
+              Foreseeable absences should be discussed with the instructor ahead of time.
+              </p>
+              </div>
+               <div class="col-md-4">
+              <h4>Community</h4>
+              <p>
+              Recalling one of the tenets of the <a href="https://en.wikipedia.org/wiki/Hacker_ethic">Hacker Ethic</a>:
+              </p>
+              <blockquote>
+              Hackers should be judged by their hacking, not criteria such as
+              degrees, age, race, sex, or position.
+              </blockquote>
+              <p>
+              Students are expected to be respectful of their fellow classmates
+              and the instructional staff.
+              </p>
+              </div>
+              <div class="col-md-4">
+              <h4>Students with Disabilities</h4>
+              <p>
+              Any student who has a documented disability and is registered with
+              Disability Services should speak with the professor as soon as possible
+              regarding accommodations. Students who are not registered should contact
+              the <a href="https://sarabeadisabilityservices.nd.edu/">Office of Disabilities</a>.
+              </p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+              <h4>Academic Honesty</h4>
+              <p>
+              Any academic misconduct in this course is considered a serious
+              offense, and the strongest possible academic penalties will be
+              pursued for such behavior. Students may discuss high-level
+              ideas with other students, but at the time of implementation
+              (i.e. programming), each person must do his/her own work. Use
+              of the Internet as a reference is allowed but directly copying
+              code or other information is cheating. It is cheating to copy,
+              to allow another person to copy, all or part of an exam or a
+              assignment, or to fake program output. It is also a violation
+              of the <a href="https://honorcode.nd.edu/">Undergraduate
+              Academic Code of Honor</a> to observe and then fail to report
+              academic dishonesty. You are responsible for the security and
+              integrity of your own work.
+              </p>
+              </div>
+              <div class="col-md-4">
+              <h4>Late Work</h4>
+              <p>
+              In the case of a serious illness or other excused absence, as defined by
+              university policies, coursework submissions will be accepted late by the
+              same number of days as the excused absence.
+              </p>
+              <p>
+              Otherwise, there is an automatic <b>25% late penalty</b> for
+              assignments turned in <b>12 hours</b> pass the specified
+              deadline.
+              </p>
+              </div>
+              <div class="col-md-4">
+              <h4>Classroom Recording</h4>
+              <p>
+              This course will be recorded using Zoom and Panopto. This system allows us
+              to automatically record and distribute lectures to you in a
+              secure environment. You can watch these recordings on your
+              computer, tablet, or smartphone. In the course in Sakai, look for
+              the "Panopto" tool on the left hand side of the course.
+              </p>
+              <p>
+              Because we will be recording in the classroom, your questions and
+              comments may be recorded. Recordings typically only capture the
+              front of the classroom, but if you have any concerns about your
+              voice or image being recorded please speak to me to discuss your
+              concerns. Except for faculty and staff who require access, no
+              content will be shared with individuals outside of your course
+              without your permission.
+              </p>
+              <p>
+              These recordings are jointly copyrighted by the University of
+              Notre Dame and your instructor. Posting them to other websites
+              (including YouTube, Facebook, SnapChat, etc.) or elsewhere
+              without express, written permission may result in disciplinary
+              action and possible civil prosecution.
+              </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="alert alert-danger">
+            <h4><i class="fa fa-warning"></i> CSE Guide to the Honor Code</h4>
+
+            <p>For the assignments in this class, you are allowed to consult
+            printed and online resources and to discuss the class material with
+            other students.  You may also consult <b>AI Tools</b> such as
+            <b>CoPilot</b> or <b>ChatGPT</b> for help explaining concepts,
+            debugging problems, or as a reference.  Viewing or consulting
+            <b>solutions</b>, such as those from other students, previous
+            semesters, or generated by <b>AI Tools</b> is <b>never
+            allowed</b>.</p>
+
+            <p>Likewise, you may copy <b>small and trivial</b> snippets from
+            books, online sources, and <b>AI Tools</b> as long as you <b>cite
+            them properly</b>.  However, you <b>may not copy</b> solutions or
+            <b>significant</b> portions of code from other students or online
+            sources, nor may you generate solutions via <b>AI Tools</b>.  
+
+            <p>Finally, when preparing for exams in this class, <b>you may not
+            access exams from previous semesters</b>, nor may you look at or
+            copy solutions from other current or former students.</p>
+
+            <p></p>
+
+            <table class="table table-striped table-bordered" style="color: #000000; background: #ffffff; font-weight: bold">
+            <thead>
+            <th></th>
+            <th class="text-center">Resources</th>
+            <th class="text-center">Solutions</th>
+            </thead>
+            <tbody>
+            <tr>
+            <th>Consulting</th>
+            <td bgcolor="#93c47d">Allowed</td>
+            <td bgcolor="#e06666">Not Allowed</td>
+            </tr>
+            <tr>
+            <th>Copying</th>
+            <td bgcolor="ffd966">Cite</td>
+            <td bgcolor="#e06666">Not Allowed</td>
+            </tr>
+            </tbody></table>
+
+            <p>See the <a
+            href="https://cse.nd.edu/undergraduate/cse-guide-to-the-honor-code/">CSE
+            Guide to the Honor Code</a> for definitions of the above terms and
+            specific examples of what is allowed and not allowed when
+            consulting resources.</p>
+
+            <p>If you are unclear about whether certain forms of consultation
+            or common work are acceptable or what the standards for citation
+            are, you responsible for consulting your instructor.</p>
+
+            <p>If an instructor sees behavior that is, in his judgement,
+            academically dishonest, he is required to file either an <a
+            href="https://honorcode.nd.edu/honor-code-violation-report/">Honor
+            Code Violation Report</a> or a formal report to the College of
+            Engineering Honesty Committee.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="alert alert-warning">
+            <h4><i class="fa fa-medkit"></i> Health and Safety Protocols</h4>
+            <p>In this class, as elsewhere on campus, <b>students must comply with
+            all University health and safety protocols</b>, including:</p>
+
+            <p>
+            <ul>
+
+            <li>Students who are not fully vaccinated must wear masks inside
+            campus buildings.</li>
+
+            <li>Students are expected to carry a mask at all times.</li>
+
+            <li>Students are to be considerate and understanding of the medical
+            needs and personal beliefs of others.</li>
+
+            </ul>
+            </p>
+
+            <p><b>We are part of a community of learning in which compassionate
+            care for one another is part of our spiritual and social charter</b>.
+            Consequently, compliance with these protocols is an expectation for
+            everyone enrolled in this course. If a student refuses to comply
+            with the University’s health and safety protocols, the student must
+            leave the classroom and will earn an unexcused absence for the
+            class period and any associated assignments/assessments for the
+            day. Persistent deviation from expected health and safety
+            guidelines may be considered a violation of the University’s <a
+            href="https://dulac.nd.edu/community-standards/standards/">"Standards
+            of Conduct,”</a> as articulated in <a href="https://dulac.nd.edu/">du Lac: A
+            Guide for Student Life</a>, and will be referred accordingly.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="page-header">
+            <h2 id="resources"><i class="fa fa-external-link"></i> Resources</h2>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-6" markdown="1">
+
+    <h3>Information</h3>
+    <ul>
+    <li><a href="https://cses.fi/book.html">Competitive Programmer's Handbook</a>
+        <p>This is our main <strong>textbook</strong> for the semester.  It contains background
+        information regarding the algorithms and data structures we will be
+        utilizing and implementing to solve different problems.</p></li>
+    <li><a href="https://github.com/AhmadElsagheer/Competitive-programming-library/tree/master/curriculum">Competitive Programming Library</a>
+        <p>This contains a list of topics and links to resources to help students
+        become competitive at programming contests.</p></li>
+    <li><a href="http://courses.csail.mit.edu/iap/interview/materials.php">Hacking a Google Interview</a>
+        <p>This site has information about common questions and concepts often
+        used in technical programming interviews, along with some answers to
+        the questions.</p></li>
+    <li><a href="https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions">500 Data Structures and Algorithms practice problems and their solutions</a>
+        <p>This is a long list of common data structures and algorithm problems.</p></li>
+    <li><a href="http://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/">Top 10 Algorithms and Data Structures for Competitive Programming</a>
+        <p>This is another list of common data structures and algorithms.</p>
+    </div>
+    <div class="col-md-6" markdown="1"></li>
+    </ul>
+    <h3>Online Challenges</h3>
+    <ul>
+    <li><a href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=118">UVa Online Judge</a>
+        <p>This site is an online judge for programming challenges found in the book <a href="https://link.springer.com/book/10.1007%2Fb97559">Programming Challenges</a>.</p></li>
+    <li><a href="http://www.hackerrank.com/">HackerRank</a>
+        <p>This site is contains a variety of programming challenges similar to
+        what is found in ACM programming contests. It also includes
+        non-programming contest type problems as well and is a platform for
+        evaluating and testing your programming skills.</p></li>
+    <li><a href="https://leetcode.com/">LeetCode</a>
+        <p>This is another site that contains a variety of programming challenges.</p></li>
+    <li><a href="https://www.topcoder.com/challenges/">TopCoder</a>
+        <p>This is another site that contains a variety of programming challenges.
+        It also periodically runs contests and learning resources.</p></li>
+    <li><a href="https://projecteuler.net/">Project Euler</a>
+        <p>This site is a large set of mathematical and programming problems
+        designed to test your abilities and sharpen your skills. The problems
+        make for good practice.</p></li>
+    <li><a href="https://code.google.com/codejam/">Google Code Jam</a>
+        <p>This is global programming competition where programmers test their
+        skills by solving multiple rounds of algorithmic puzzles.</p></li>
+    <li><a href="https://adventofcode.com/">Advent of Code</a>
+        <p>This is an annual series of programming challenges.</p>
+    </div></li>
+    </ul>
+    </div>

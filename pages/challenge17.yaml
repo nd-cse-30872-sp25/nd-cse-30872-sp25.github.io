@@ -1,0 +1,223 @@
+title:      "Challenge 17: Mike's Spanning Trees"
+icon:       fa-code
+navigation:
+  - name: "Home"
+    link: "index.html"
+    icon: "fa-gavel"
+internal:
+external:
+body:       |
+
+    <img src="static/img/challenge18-mike.jpg" class="img-responsive img-rounded pull-right">
+
+    [Mike] is tired of snooping on hardworking Americans who pay his
+    salary[^1].  Despite the generous benefits, working for the federal
+    government... is not that great.  Unlimited and unchecked access to
+    everyone's data sounds fun, but he'd rather be properly compensated for his
+    service.  Instead, [Mike] wants to sell out and join [Seb] on the [fruit
+    farm][^2] where they totally believe in privacy.  Totally.
+
+    While attending [WWDC23] and witnessing the unveiling of the **Vision
+    Pro**[^3], [Mike] met a Notre Dame Computer Science and Engineering alumna
+    who suggested that maybe he should consider joining the cult`^H^H^H^H`
+    company[^4].  After some consideration (very brief), [Mike] decides he
+    wants to give it a shot.  As a long time [fruit farm] consumer and
+    advocate, he would feel at home at the company, and would get a strong
+    sense of belonging and fulfillment, which is really what he is currently
+    missing in his current position.
+
+    Inspired and fueled by the magic of the [fruit farm], [Mike] decides to
+    buckle down and grind some programming challenges (without **GPT** and
+    **Co-Pilot**!) in order to ace his future technical interviews.  In
+    searching for some more exotic and off-beat programming problems, he comes
+    across the [DailyProgrammer] subreddit which posts different programming
+    puzzles for users to try out and share.
+
+    After some surveying, he comes across a challenging problem about [minimum spanning trees]:
+
+    > Given an [undirected graph] in the form of an [adjaceny matrix], determine
+    the **weight** of the [minimum spanning tree] and its associated **edges**.
+
+    <div class="thumbnail text-center">
+    <img src="static/img/challenge18-mst.png" class="img-responsive">
+    </div>
+
+    For instance, in **Graph 0** above, the [minimum spanning tree] would have a
+    total edge weight of `10` and consist of the following edges:
+
+        :::text
+        (A, C)
+        (B, C)
+        (C, E)
+        (D, E)
+        (D, F)
+
+    > You will be given a series of graphs specified by a [distance matrix].
+    You are to compute the [minimum spanning tree] and output the **total edge
+    weight** of the tree and the **edges** in the tree.
+
+    Unfortunately, his **data structures** knowledge is a bit rusty and this is
+    a bit of a struggle for him... likewise, the ongoing [Reddit Blackout] is
+    making it difficult for him to access information on [Reddit], so he
+    decides to ask for your help once again on coming up a solution for the
+    problem described above.
+
+    <div class="alert alert-info" markdown="1">
+    #### <i class="fa fa-lightbulb-o"></i> Inspiration
+
+    This problem is inspired by [Challenge #152 [Hard] Minimum Spanning Tree](https://old.reddit.com/r/dailyprogrammer/comments/20cydp/14042014_challenge_152_hard_minimum_spanning_tree/)
+    from the [DailyProgrammer] subreddit.
+
+    </div>
+
+    [Mike]: https://michaeleisemann.com/
+    [Seb]:  https://www.linkedin.com/in/sgutier5
+    [fruit farm]: https://www.apple.com/
+    [WWDC23]: https://developer.apple.com/wwdc23/
+    [DailyProgrammer]: https://old.reddit.com/r/DailyProgrammer
+    [undirected graph]: https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)#Undirected_graph
+    [adjaceny matrix]: https://en.wikipedia.org/wiki/Adjacency_matrix
+    [minimum spanning tree]: https://en.wikipedia.org/wiki/Minimum_spanning_tree
+    [minimum spanning trees]: https://en.wikipedia.org/wiki/Minimum_spanning_tree
+    [distance matrix]: https://en.wikipedia.org/wiki/Distance_matrix
+    [Reddit]: https://old.reddit.com
+    [Reddit Blackout]: https://www.eff.org/deeplinks/2023/06/what-reddit-got-wrong
+
+    [^1]: It's well know that the [US is spying on its own citizens](https://www.wired.com/story/odni-commercially-available-information-report/).
+    [^2]: At this point... who isn't?
+    [^3]: Read about his travels: [Part 1](https://michaeleisemann.com/phame/post/view/2/wwdc_2023_-_part_1/), [Part 2](https://michaeleisemann.com/phame/post/view/3/wwdc_2023_-_part_2/), [Part 3](https://michaeleisemann.com/phame/post/view/4/wwdc_2023_-_part_3/)
+    [^4]: Networking is a part of the game.
+
+    ## Input
+
+    You will be given a series of [undirected graph]s from in the following format:
+
+        :::text
+        NVERTICES
+        -1 -1 ...
+        -1 -1 ...
+
+    The first line specifies the number of vertices in the [undirected graph],
+    which will be between `1` and `26` (inclusive). This is followed by a [distance
+    matrix] with each row separated by newlines and each column separated by spaces:
+
+    - `-1` is used to denote there is no edge between a pair of vertices.
+
+    - The vertices are assumed to be named `A`, `B`, `C`, `D` and so on, with the
+      matrix representing them in that order (left-to-right and top-to-bottom).
+
+    ### Example Input
+
+    Here is an example of the input for the problem (corresponding to **Graph
+    0** and **Graph 1** in the diagram above):
+
+        :::text
+        6
+        -1  4  2 -1 -1 -1
+         4 -1  1  8 -1 -1
+         2  1 -1 -1  4 -1
+        -1  8 -1 -1  2  1
+        -1 -1  4  2 -1  7
+        -1 -1 -1  1  7 -1
+        5
+        -1  2  6 -1 -1
+         2 -1  4  1 -1
+         6  4 -1 -1  1
+        -1  1 -1 -1  1
+        -1 -1  1  1 -1
+
+    ## Output
+
+    For each [undirected graph], you are to print out the **total weight** of
+    the [minimum spanning tree], and then the **edges** of the [minimum
+    spanning tree] represented by the two vertices such as `AB` in
+    **lexicographical order**.
+
+    ### Example Output
+
+    For example, given the input above, you should output the following:
+
+        :::text
+        10
+        AC
+        BC
+        CE
+        DE
+        DF
+
+        5
+        AB
+        BD
+        CE
+        DE
+
+    <div class="alert alert-warning" markdown="1">
+    **Note**: You must put an empty line **between** the outputs of each graph.
+    </div>
+
+    <div class="alert alert-danger" markdown="1">
+    #### <i class="fa fa-balance-scale"></i> Algorithmic Complexity
+
+    For each input test case, your solution should have the following targets:
+
+    <table class="table table-striped table-bordered" style="background-color: white" markdown="1">
+    <tbody markdown="1">
+    <tr markdown="1">
+      <td markdown="1">**Time Complexity**</td>
+      <td markdown="1">`O(VlogV)`, where `V` is the number of vertices in the graph.</td>
+    </tr>
+    <tr markdown="1">
+      <td markdown="1">**Space Complexity**</td>
+      <td markdown="1">`O(V+E)`, where `V` is the number of vertices and `E` is the number of edges in the graph.</td>
+    </tr>
+    </tbody>
+    </table>
+
+    Your solution may be below the targets, but it **should not exceed them**.
+
+    </div>
+
+    ## Submission
+
+    To submit your work, follow the same procedure you used for [Reading 01]:
+
+        :::bash
+        $ cd path/to/cse-30872-su23-assignments     # Go to assignments repository
+        $ git checkout master                       # Make sure we are on master
+        $ git pull --rebase                         # Pull any changes from GitHub
+
+        $ git checkout -b challenge18               # Create and checkout challenge18 branch
+
+        $ $EDITOR challenge18/program.py            # Edit your code
+
+        $ git add challenge18/program.py            # Stage your changes
+        $ git commit -m "challenge18: done"         # Commit your changes
+
+        $ git push -u origin challenge18            # Send changes to GitHub
+
+    To check your code, you can use the `.scripts/check.py` script or [curl]:
+
+        :::bash
+        $ .scripts/check.py
+        Checking challenge18 program.py ...
+          Result Success
+            Time 0.03
+           Score 6.00 / 6.00
+
+        $ curl -F source=@challenge18/program.py https://dredd.h4x0r.space/code/cse-30872-su23/challenge18
+        {"result": "Success", "score": 6, "time": 0.03165841102600098, "value": 6, "status": 0}
+
+    <div class="alert alert-success" markdown="1">
+    #### <i class="fa fa-github"></i> Pull Request
+
+    Once you have committed your work and pushed it to [GitHub], remember to
+    create a **pull request** and assign it to the **teaching assistant**.
+
+    </div>
+
+    [GitHub]:           https://github.com
+    [Reading 01]:       reading01.html
+
+    [HackerRank]:       https://www.hackerrank.com
+    [LeetCode]:         https://leetcode.com
+    [curl]:             https://curl.haxx.se/

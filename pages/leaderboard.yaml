@@ -1,0 +1,61 @@
+title: "Class Leaderboard"
+icon: fa-trophy
+navigation:
+  - name: "Home"
+    link: "index.html"
+    icon: "fa-home"
+internal:
+external:
+body:
+title: "Class Leaderboard"
+icon: fa-trophy
+navigation:
+  - name: "Home"
+    link: "index.html"
+    icon: fa-home
+internal:
+external:
+body: |
+  <h1>Class Leaderboard</h1>
+  <table style="border-collapse: collapse; width: 80%; margin: auto; font-family: Arial, sans-serif;">
+      <thead>
+          <tr style="background-color: #f2f2f2; text-align: left; font-size: 18px; border-bottom: 2px solid #ddd;">
+              <th style="padding: 10px; border-right: 1px solid #ddd;">Rank</th>
+              <th style="padding: 10px; border-right: 1px solid #ddd;">Student</th>
+              <th style="padding: 10px; border-right: 1px solid #ddd;">Problems Solved</th>
+              <th style="padding: 10px; border-right: 1px solid #ddd;">Bonus Points</th>
+              <th style="padding: 10px;">Last Updated</th>
+          </tr>
+      </thead>
+      <tbody id="leaderboard" style="font-size: 16px;">
+      </tbody>
+  </table>
+
+  <script>
+      async function loadLeaderboard() {
+          const response = await fetch('/static/json/leaderboard.json');
+          const data = await response.json();
+
+          data.sort((a, b) => b.problems_solved - a.problems_solved);
+
+          const totalBonusPoints = 100;
+          const totalProblemsSolved = data.reduce((sum, student) => sum + student.problems_solved, 0);
+
+          const table = document.getElementById('leaderboard');
+          data.forEach((entry, index) => {
+              const bonusPoints = totalProblemsSolved > 0
+                  ? Math.round((entry.problems_solved / totalProblemsSolved) * totalBonusPoints)
+                  : 0;
+
+              const row = `<tr style="background-color: ${index % 2 === 0 ? '#ffffff' : '#f9f9f9'};">
+                  <td style="padding: 10px; border-right: 1px solid #ddd;">${index + 1}</td>
+                  <td style="padding: 10px; border-right: 1px solid #ddd;">${entry.student}</td>
+                  <td style="padding: 10px; border-right: 1px solid #ddd;">${entry.problems_solved}</td>
+                  <td style="padding: 10px; border-right: 1px solid #ddd;">${bonusPoints}</td>
+                  <td style="padding: 10px;">${entry.last_updated}</td>
+              </tr>`;
+              table.innerHTML += row;
+          });
+      }
+      window.onload = loadLeaderboard;
+  </script>
