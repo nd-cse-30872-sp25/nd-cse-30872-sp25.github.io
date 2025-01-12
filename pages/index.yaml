@@ -66,16 +66,13 @@ body:       |
         <h3>Class Information</h3>
         <dl>
             <dt><i class="fa fa-clock-o"></i> Lecture</dt>
-            <dd><strong>M/W/F</strong> 11:30 AM - 12:20 PM</dd>
+            <dd><strong>M/W/F</strong> 12:30 AM - 13:20 PM</dd>
 
             <dt><i class="fa fa-home"></i> Location</dt>
             <dd>208 DeBart</dd>
 
-            <dt><i class="fa fa-video-camera"></i> Zoom Meeting</dt>
-            <dd><a href="https://notredame.zoom.us/j/6862905283">686 290 5283</a></dd>
-
             <dt><i class="fa fa-envelope"></i> Mailing List (Class)</dt>
-            <dd><a href="mailto:fa24-cse-30872-01-group@nd.edu">fa24-cse-30872-01-group@nd.edu</a></dd>
+            <dd><a href="mailto:sp25-cse-30872-01-group@nd.edu">fa24-cse-30872-01-group@nd.edu</a></dd>
 
             <dt><i class="fa fa-envelope"></i> Mailing List (Staff)</dt>
             <dd><a href="mailto:fa24-cse-30872-01-staff-list@nd.edu">fa24-cse-30872-01-staff-list@nd.edu</a></dd>
