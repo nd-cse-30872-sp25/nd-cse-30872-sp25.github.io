@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Class Leaderboard</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="static/css/blugold.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	body {
+	    padding: 10px;
+	}
+	</style>
+    </head>
+    <body>
+	<div class="container">
+
+	    <div class="row">
+		<div class="page-header">
+		    <ul class="nav nav-pills pull-right">
+			
+			<li><a href="index.html"><i class="fa fa-home"></i> <span class="visible-md-inline visible-lg-inline">Home</span></a></li>
+			
+		    </ul>
+		    <h1><i class="fa fa-trophy"></i> Class Leaderboard</h1>
+		</div>
+	    </div>
+
+            
+<h1>Class Leaderboard</h1>
+<table style="border-collapse: collapse; width: 80%; margin: auto; font-family: Arial, sans-serif;">
+    <thead>
+        <tr style="background-color: #f2f2f2; text-align: left; font-size: 18px; border-bottom: 2px solid #ddd;">
+            <th style="padding: 10px; border-right: 1px solid #ddd;">Rank</th>
+            <th style="padding: 10px; border-right: 1px solid #ddd;">Student</th>
+            <th style="padding: 10px; border-right: 1px solid #ddd;">Problems Solved</th>
+            <th style="padding: 10px; border-right: 1px solid #ddd;">Bonus Points</th>
+            <th style="padding: 10px;">Last Updated</th>
+        </tr>
+    </thead>
+    <tbody id="leaderboard" style="font-size: 16px;">
+    </tbody>
+</table>
+
+<script>
+    async function loadLeaderboard() {
+        const response = await fetch('/static/json/leaderboard.json');
+        const data = await response.json();
+
+        data.sort((a, b) => b.problems_solved - a.problems_solved);
+
+        const totalBonusPoints = 100;
+        const totalProblemsSolved = data.reduce((sum, student) => sum + student.problems_solved, 0);
+
+        const table = document.getElementById('leaderboard');
+        data.forEach((entry, index) => {
+            const bonusPoints = totalProblemsSolved > 0
+                ? Math.round((entry.problems_solved / totalProblemsSolved) * totalBonusPoints)
+                : 0;
+
+            const row = `<tr style="background-color: ${index % 2 === 0 ? '#ffffff' : '#f9f9f9'};">
+                <td style="padding: 10px; border-right: 1px solid #ddd;">${index + 1}</td>
+                <td style="padding: 10px; border-right: 1px solid #ddd;">${entry.student}</td>
+                <td style="padding: 10px; border-right: 1px solid #ddd;">${entry.problems_solved}</td>
+                <td style="padding: 10px; border-right: 1px solid #ddd;">${bonusPoints}</td>
+                <td style="padding: 10px;">${entry.last_updated}</td>
+            </tr>`;
+            table.innerHTML += row;
+        });
+    }
+    window.onload = loadLeaderboard;
+</script>
+
+
+	    <div class="row">
+		<hr/>
+
+		<footer class="text-center">
+		    <p class="text-muted">
+		    <small>
+		    Built using
+		    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+		    <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>, and
+		    <a href="http://www.python.org/">Python</a>.
+		    <br/>
+		    &copy; 2022 <a href="http://www.nd.edu">University of Notre Dame</a>
+		    </small>
+		    </p>
+		</footer>
+	    </div>
+
+	</div> <!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+    </body>
+</html>
+
