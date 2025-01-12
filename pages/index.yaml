@@ -66,10 +66,10 @@ body:       |
         <h3>Class Information</h3>
         <dl>
             <dt><i class="fa fa-clock-o"></i> Lecture</dt>
-            <dd><strong>M/W/F</strong> 12:30 AM - 13:20 PM</dd>
+            <dd><strong>M/W/F</strong> 12:50 AM - 1:40 PM</dd>
 
             <dt><i class="fa fa-home"></i> Location</dt>
-            <dd>208 DeBart</dd>
+            <dd>148 Nieuwland</dd>
 
             <dt><i class="fa fa-slack"></i> Slack</dt>
             <dd><a href="https://nd-cse.slack.com/messages/cse-30872-sp25/">#cse-30872-sp25</a></dd>
@@ -147,20 +147,6 @@ body:       |
             <img src="static/img/office-hours.png">
         </div>
       <div>
-      <div class="alert alert-success" markdown="1">
-      <h4><i class="fa fa-video-camera"></i> Online Office Hours</h4>
-
-      Online office hours for the teaching assistants will take place in <a
-      href="https://notredame.zoom.us/j/6862905283">Zoom Meeting 686 290
-      5283</a>.
-
-      Please use the main session for <b>general</b> questions.  If you have an
-      <b>individual</b> question, then request a private <b>breakout room</b>
-      with the teaching assistant.
-
-      If you need more individualized attention, please contact the
-      <b>instructor</b> to schedule an <b>appointment</b>.
-      </div>
     </div>
 
     <div class="row">
