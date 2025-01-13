@@ -1,0 +1,38 @@
+{
+    "Term": "Spring",
+    "Year": "2025",
+    "TAs": {
+        "tlohman": {
+            "name": "Thomas Lohman",
+            "level": "Graduate",
+            "github": "Thomas-Lohman",
+            "OH Days": "Monday",
+            "OH Times": "6:30 - 7:30",
+            "OH Location": "CSE Commons"
+        },
+        "fseptien": {
+            "name": "Francisco (Pancho) Septien",
+            "level": "Undergraduate",
+            "github": "",
+            "OH Days": "Monday",
+            "OH Times": "6:30 - 7:30",
+            "OH Location": "CSE Commons"
+        },
+        "ozino": {
+            "name": "Olivia Zino",
+            "level": "Undergraduate",
+            "github": "",
+            "OH Days": "Monday",
+            "OH Times": "6:30 - 7:30",
+            "OH Location": "CSE Commons"
+        },
+        "snoonan": {
+            "name": "Sophia Noonan",
+            "level": "Undergraduate",
+            "github": "",
+            "OH Days": "Monday",
+            "OH Times": "6:30 - 7:30",
+            "OH Location": "CSE Commons"
+        }
+    }
+}
