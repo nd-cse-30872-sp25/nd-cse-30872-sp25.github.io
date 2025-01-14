@@ -63,6 +63,7 @@
       link: https://docs.google.com/presentation/d/1c8duDG_JRQTOSQCSXNltK-rauwGEEGBtgF7pHwuupMA/edit?usp=sharing
   - date: Fri 01/31
     topics: Debugging
+    items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1RfyS74AmfEqi1J1pweEyYTJ519qUuXHB/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true 
   - date: Sun 02/02
@@ -235,7 +236,7 @@
     - name: Panopto
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb59f2d2-475d-4b16-8bae-af4801252f14
   - date: Fri 04/04
-    topics: Office Hours
+    topics: Challenge Day
   - date: Sun 04/06
     assignments:
     - Challenge 17
@@ -269,7 +270,7 @@
   - date: Wed 04/16
     topics: Primes and Modular Arithmetic
   - date: Fri 04/18
-    topics: Office Hours
+    topics: Challenge Day
   - date: Sun 04/20
     assignments:
     - Challenge 19
@@ -287,7 +288,7 @@
     - name: Slides
       link: https://docs.google.com/presentation/d/1GfAQZrceqC3xnbOIR7dBi7NvV2E6eayU/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
   - date: Fri 04/25
-    topics: Slacking and Hacking
+    topics: Challenge Day
   - date: Sun 04/27
     assignments:
     - Challenge 21
