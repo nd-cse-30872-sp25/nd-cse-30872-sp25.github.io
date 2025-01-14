@@ -9,7 +9,17 @@
       link: https://docs.google.com/presentation/d/1_DDSPW3gKj_eDG_1oWe5KSWBXTf6Erog/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
     - name: Slides
       link: https://docs.google.com/presentation/d/1HkUSuYkob8u5yyOLfhAKu5VRl9f2nwvXflz85_MtS6w/edit?usp=sharing
+    - name:  Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8b252fd8-299b-4775-8797-b26401349370
+- name: 'Unit 01: Data Structures and Algorithms'
+- name: Sequence Containers
+  days:
   - date: Wed 01/15
+    topics: Arrays, Lists
+    items:
+    - name: Slides
+      link: https://docs.google.com/presentation/d/1DxsKBEFkPAloiL894onMYEDCb8emZ8ucXc6QDLk1r_Q/edit?usp=sharing
+  - date: Fri 01/17
     topics: Complexity, Coding Style
     items:
     - name: Slides
@@ -19,16 +29,10 @@
   - date: Sun 01/19
     assignments:
     - Challenge 00
-- name: 'Unit 01: Data Structures and Algorithms'
-- name: Sequence Containers
-  days:
-  - date: Fri 01/17
-    topics: Arrays, Lists
+  - date: Mon 01/20
+    topics: Cancelled in Observance of the National Championship (MLK Day)
     assignments:
     - Reading 01
-    items:
-    - name: Slides
-      link: https://docs.google.com/presentation/d/1DxsKBEFkPAloiL894onMYEDCb8emZ8ucXc6QDLk1r_Q/edit?usp=sharing
   - date: Wed 01/22
     topics: Stacks, Queues
     items:
@@ -166,7 +170,7 @@
     topics: ''
     items:
     - name: Contest I
-- name: Fall Break
+- name: Spring Break
 - name: 'Unit 02: Trees and Graphs'
 - name: Trees
   days:
@@ -249,7 +253,7 @@
     - name: Panopto
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc77c08d-3c50-475f-8af4-af4f01234226
   - date: Fri 04/11
-    topics: Office Hours
+    topics: Cancelled (Easter) 
   - date: Sun 04/13
     assignments:
     - Challenge 19
@@ -264,9 +268,9 @@
     - name: Slides
       link: https://docs.google.com/presentation/d/18FUyj3TUK_iRIZTycIo81albN0PETbKP5Qe1RLQ1b2A/edit?usp=sharing
   - date: Wed 04/16
-    topics: Thanksgiving
+    topics: Easter
   - date: Wed 04/23
-    topics: Thanksgiving
+    topics: Easter
 - name: Miscellaneous
   days:
   - date: Fri 04/25
