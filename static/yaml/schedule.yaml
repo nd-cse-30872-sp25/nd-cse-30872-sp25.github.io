@@ -9,15 +9,13 @@
       link: https://docs.google.com/presentation/d/1_DDSPW3gKj_eDG_1oWe5KSWBXTf6Erog/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
     - name: Slides
       link: https://docs.google.com/presentation/d/1HkUSuYkob8u5yyOLfhAKu5VRl9f2nwvXflz85_MtS6w/edit?usp=sharing
-    -name:  Panopto
+    - name:  Panopto
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8b252fd8-299b-4775-8797-b26401349370
 - name: 'Unit 01: Data Structures and Algorithms'
 - name: Sequence Containers
   days:
   - date: Wed 01/15
     topics: Arrays, Lists
-    assignments:
-    - Reading 01
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1DxsKBEFkPAloiL894onMYEDCb8emZ8ucXc6QDLk1r_Q/edit?usp=sharing
@@ -33,6 +31,8 @@
     - Challenge 00
   - date: Mon 01/20
     topics: Cancelled in Observance of the National Championship (MLK Day)
+    assignments:
+    - Reading 01
   - date: Wed 01/22
     topics: Stacks, Queues
     items:
