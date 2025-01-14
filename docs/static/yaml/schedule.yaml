@@ -104,9 +104,6 @@
       link: https://docs.google.com/presentation/d/1jlDiEL5PiIXOwY9wHrYnyTHiy_mz3JFd4ceTPVKegtk/edit?usp=sharing
   - date: Wed 02/12
     topics: Permutations, Backtracking
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a3e5567-b3c5-4be0-ac1b-af170116ce3e
   - date: Fri 02/14
     topics: Static Analysis
     items:
@@ -148,9 +145,6 @@
       link: https://docs.google.com/presentation/d/1ataFbUODdUlzbpJj6M0h5DKsvAcTk1fRnTndodox89o/edit?usp=sharing
   - date: Wed 02/26
     topics: Table Building
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=79e08acf-b78c-469e-bf73-af2501116ffb
   - date: Fri 02/28
     topics: Table Building
   - date: Sun 03/02
@@ -184,14 +178,8 @@
       link: https://docs.google.com/presentation/d/1KDy3UVhQn3ehLzoT3tF_WbNcdeoJIL7EPxUTwCOe7Xg/edit?usp=sharing
   - date: Wed 03/19
     topics: Traversal
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c687335b-16dd-43dc-892b-af3a0114c320
   - date: Fri 03/21
     topics: Divide and Conquer
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a15c6c7a-8d24-4f15-9c8f-b21b010f0870
   - date: Sun 03/23
     assignments:
     - Challenge 13
@@ -207,14 +195,8 @@
       link: https://docs.google.com/presentation/d/16K7s0K-MTjKP_dV3Xy1IovbXNWI_rWvAXW9e87qHOSY/edit?usp=sharing
   - date: Wed 03/26
     topics: Traversal
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b2a86534-dbfb-4598-8b5a-af410116313c
   - date: Fri 03/28
     topics: Shortest Paths
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=44ad9416-26e0-4f45-9360-af43010deb1b
   - date: Sun 03/30
     assignments:
     - Challenge 15
@@ -230,9 +212,6 @@
       link: https://docs.google.com/presentation/d/154zJqLI2KL1s4Gt-BzVq40mE5rXRdPW54OWEpgptXX0/edit?usp=sharing
   - date: Wed 04/02
     topics: Topological Sorting
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb59f2d2-475d-4b16-8bae-af4801252f14
   - date: Fri 04/04
     topics: Challenge Day
   - date: Sun 04/06
@@ -250,9 +229,6 @@
       link: https://docs.google.com/presentation/d/1yo2lFhdmWGvLM69tM3sqzvuej2OlOnbQNFponk__6xA/edit?usp=sharing
   - date: Wed 04/09
     topics: Flows and Cuts
-    items:
-    - name: Panopto
-      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc77c08d-3c50-475f-8af4-af4f01234226
   - date: Fri 04/11
     topics: Cancelled (Easter) 
   
