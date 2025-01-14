@@ -193,7 +193,7 @@ body:       |
                     <td class="text-center text-strong"><tt>{{ day['date'] }}</tt></td>
                     <td class="text-strong">
                     {% if 'topics' in day %}
-                      {% if day['topics'] == 'Office Hours' or day['topics'] == 'Cancelled' %}
+                      {% if day['topics'] == 'Office Hours' or 'Cancelled' in day['topics'] %}
                       <i class="text-muted">{{ day.get('topics', '') }}</i>
                       {% else %}
                       {{ day.get('topics', '') }}
