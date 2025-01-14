@@ -62,7 +62,7 @@
     - name: Slides
       link: https://docs.google.com/presentation/d/1c8duDG_JRQTOSQCSXNltK-rauwGEEGBtgF7pHwuupMA/edit?usp=sharing
   - date: Fri 01/31
-    topics: Cancelled
+    topics: ????
   - date: Sun 02/02
     assignments:
     - Challenge 03
@@ -254,49 +254,50 @@
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc77c08d-3c50-475f-8af4-af4f01234226
   - date: Fri 04/11
     topics: Cancelled (Easter) 
-  - date: Sun 04/13
-    assignments:
-    - Challenge 19
-    - Challenge 20
+  
 - name: Number Theory
   days:
   - date: Mon 04/14
-    topics: Primes and Modular Arithmetic
+    topics: Cancelled (Easter)
     assignments:
     - Reading 11
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/18FUyj3TUK_iRIZTycIo81albN0PETbKP5Qe1RLQ1b2A/edit?usp=sharing
   - date: Wed 04/16
-    topics: Easter
-  - date: Wed 04/23
-    topics: Easter
+    topics: Primes and Modular Arithmetic
+  - date: Friday 04/18
+    topics: ???
+  - date: Sun 04/20
+    assignments:
+    - Challenge 19
+    - Challenge 20
 - name: Miscellaneous
   days:
-  - date: Fri 04/25
+  - date: Mon 04/21
     topics: Negotiation, Contracts, Promotion, Mobility
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1Kw1IQd4tV09dVJkK6aKlzmF6_3C__fApHDL9ng9tdps/edit?usp=sharing
-  - date: Mon 04/28
+  - date: Wed 04/23
     topics: Graduate School
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1GfAQZrceqC3xnbOIR7dBi7NvV2E6eayU/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-  - date: Wed 04/30
+  - date: Fri 04/25
     topics: Slacking and Hacking
-  - date: Sun 05/04
+  - date: Sun 04/27
     assignments:
     - Challenge 21
     - Challenge 22
     - Challenge 23
 - name: Contest II
   days:
-  - date: Fri 05/02
+  - date: Mon 04/28
     topics: ''
     items:
     - name: Contest II
-  - date: Mon 05/05
+  - date: Wed 04/30
     topics: ''
     items:
-    - name: Contest II12/11
+    - name: Contest II
