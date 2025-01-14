@@ -112,16 +112,14 @@
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1qLMV8eIOU6xXECWHVxjFug_JlTNC78Igw_Y3tnLzlms/edit?usp=sharing
-  - date: Sun 02/16
-    assignments:
-    - Challenge 07
-    - Challenge 08
 - name: Bit Manipulation, Greedy Algorithms
   days:
   - date: Mon 02/17
-    topics: Bit Manipulation
+    topics: Bit Manipulation (Challenges due Monday for JPW)
     assignments:
     - Reading 05
+    - Challenge 07
+    - Challenge 08
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/16phiiZ9pOjapHyHA8dXBazR_eKNjz7_aKLxMsoDVLEE/edit?usp=sharing
