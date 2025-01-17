@@ -17,6 +17,7 @@ internal:
 external:
     tas:        'static/yaml/tas.yaml'
     schedule:   'static/yaml/schedule.yaml'
+    semester_info: 'static/yaml/semester_info.yaml'
 body:       |
 
     <div class="row" markdown="1">
@@ -85,6 +86,7 @@ body:       |
         <dl>
             <dt><i class="fa fa-user"></i> Instructor</dt>
             <dd><a href="http://williamtheisen.com">Bill Theisen</a> (<a href="mailto:pbui@nd.edu">wtheisen@nd.edu</a>)</dd>
+            <dd>Please use Dr./Professor Bill or Dr./Professor Theisen</dd>
 
             <dt><i class="fa fa-life-ring"></i> Office Hours</dt>
             <dd><strong>Thursdays</strong> 1:00 PM - 4:00 PM, and by <strong>appointment</strong></dd>
@@ -140,19 +142,93 @@ body:       |
     </div>
     </div>
 
-    <div class="row" markdown="1">
-      <div class="col-md-12">
-        <h3>Office Hours</h3>
-        <div class="thumbnail">
-            <img src="static/img/office-hours.png">
+    <div class="row">
+        <div class="page-header">
+            <h2 id="office_hours"><i class="fa fa-calendar"></i>Office Hours</h2>
         </div>
-      <div>
     </div>
 
     <div class="row">
-        <div class="page-header">
-            <h2 id="schedule"><i class="fa fa-calendar"></i> Schedule</h2>
-        </div>
+        <table border="2px solid black" cellpadding="5" cellspacing="0" style="table-layout: fixed; width: 100%; border-collapse: "collapse"">
+        <tr>
+            <th style="width: 150px;"></th>
+            {% for day in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
+            <th style="width: calc((100% - 150px) / 7); text-align: center;">{{ day }}</th>
+            {% end %}
+        </tr>
+
+        {% set processed_slots = {} %}
+        
+       {% for time_slot in ["10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "12:00 PM - 1:00 PM", "1:00 PM - 2:00 PM", "2:00 PM - 3:00 PM", "3:00 PM - 4:00 PM", "4:00 PM - 5:00 PM", "5:00 PM - 6:00 PM", "6:00 PM - 7:00 PM", "7:00 PM - 8:00 PM", "8:00 PM - 9:00 PM"] %}
+            <tr>
+            <td style="text-align: left; padding: 8px;">{{ time_slot }}</td>
+            {% for day in ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
+                {% if not processed_slots.get(f"{day}_{time_slot}") %}
+                    {% set instructor_hours = page.external['semester_info']['Instructor']['office_hours'].get(day, '') %}
+                    {% set show_cell = True %}
+                    
+                    {% if instructor_hours %}
+                        {% set start_time = instructor_hours.split(' - ')[0] %}
+                        {% set end_time = instructor_hours.split(' - ')[1] %}
+                        {% if dateutil.parser.parse(start_time).strftime("%I:%M:%S %p") == dateutil.parser.parse(time_slot.split(' - ')[0]).strftime("%I:%M:%S %p") %}
+                            {% set start_slot = dateutil.parser.parse(start_time) %}
+                            {% set end_slot = dateutil.parser.parse(end_time) %}
+
+                            {% set rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+
+                            {% for i in range(rowspan) %}
+                                {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
+                                {% set curr_slot = (start_slot + hour_offset).strftime("%-I:%M %p") %}
+                                {% set _ = processed_slots.update({f"{day}_{curr_slot} - {(start_slot + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime('%-I:%M %p')}": True}) %}
+                            {% end %}
+                            <td rowspan="{{ rowspan }}" style="text-align: center; vertical-align: middle; padding: 0;">
+                                <div style="background-color: rgba(204, 229, 255, 0.5); height: 100%; padding: 8px;">
+                                {{ page.external['semester_info']['Instructor']['name'] }}<br>
+                                {{ instructor_hours }}<br>
+                                {{ page.external['semester_info']['Instructor']['oh_location'] }}
+                                </div>
+                            </td>
+                            {% set show_cell = False %}
+                        {% end %}
+                    {% end %}
+
+                    {% for ta_id, ta in page.external['semester_info']['TAs'].items() %}
+                        {% if 'office_hours' in ta and day in ta['office_hours'] %}
+                            {% set ta_hours = ta['office_hours'][day] %}
+                            {% set start_time = ta_hours.split(' - ')[0].split(':')[0] + ":00 " + ta_hours.split(' - ')[0].split(':')[1].split(' ')[1] %}
+                            {% if dateutil.parser.parse(start_time).strftime("%I:%M:%S %p") == dateutil.parser.parse(time_slot.split(' - ')[0]).strftime("%I:%M:%S %p") %}
+                                {% set end_time = ta_hours.split(' - ')[1] %}
+                                {% set start_slot = dateutil.parser.parse(start_time) %}
+                                {% set end_slot = dateutil.parser.parse(end_time) %}
+
+                                {% set rowspan = int(((end_slot - start_slot).seconds / 3600) + 0.5) %}
+
+                                {% for i in range(rowspan) %}
+                                    {% set hour_offset = dateutil.relativedelta.relativedelta(hours=i) %}
+                                    {% set curr_slot = (start_slot + hour_offset).strftime("%-I:%M %p") %}
+                                    {% set _ = processed_slots.update({f"{day}_{curr_slot} - {(start_slot + hour_offset + dateutil.relativedelta.relativedelta(hours=1)).strftime('%-I:%M %p')}": True}) %}
+                                {% end %}
+
+                                <td rowspan="{{ rowspan }}" style="text-align: center; vertical-align: middle; padding: 0;">
+                                    <div style="background-color: rgba(204, 229, 255, 0.5); height: 100%; padding: 8px;">
+                                        {{ ta['name'] }}<br>
+                                        {{ ta_hours }}<br>
+                                        {{ ta['oh_location'] }}
+                                    </div>
+                                </td>
+                                {% set show_cell = False %}
+                            {% end %}
+                        {% end %}
+                    {% end %}
+                    
+                    {% if show_cell %}
+                        <td style="padding: 8px;"></td>
+                    {% end %}
+                {% end %}
+            {% end %}
+            </tr>
+        {% end %}
+        </table>
     </div>
 
     <style>
