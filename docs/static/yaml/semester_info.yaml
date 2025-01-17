@@ -1,0 +1,29 @@
+Instructor:
+  github: wtheisen
+  level: Professor
+  name: Bill Theisen
+  netid: wtheisen
+  office_hours:
+    Thursday: 1:00 PM - 4:00 PM
+  oh_location: 356B Fitz
+TAs:
+  msorenso:
+    github: msorenso
+    level: Undergraduate
+    name: Michael Sorenson
+    netid: msorenso
+    office_hours:
+      Tuesday: 6:00 PM - 7:00 PM
+      Thursday: 6:00 PM - 7:00 PM
+    oh_location: Inno Lounge
+  mpinedam:
+    github: TAPMelvin
+    level: Undergraduate
+    name: Melvin Pineda Miguel
+    netid: mpinedam
+    office_hours:
+      Monday: 5:00 PM - 6:00 PM
+      Wednesday: 5:00 PM - 6:00 PM
+    oh_location: CSE Commons
+Term: Spring
+Year: '2025'
