@@ -19,6 +19,8 @@
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1DxsKBEFkPAloiL894onMYEDCb8emZ8ucXc6QDLk1r_Q/edit?usp=sharing
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=31650f16-7062-4471-a641-b266013720ed
   - date: Fri 01/17
     topics: Complexity, Coding Style
     items:
