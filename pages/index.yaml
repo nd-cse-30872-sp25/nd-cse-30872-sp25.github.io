@@ -2,7 +2,7 @@ title:      Programming Challenges
 icon:       fa-gavel
 navigation:
     - name: "Leaderboard"
-      link: "leaderboard.williamtheisen.com"
+      link: "https://leaderboard.williamtheisen.com"
       icon: "fa-trophy"
     - name: "Logistics"
       link: "#logistics"
