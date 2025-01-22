@@ -42,6 +42,8 @@
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1lzuMS5Pe7HD34D5nTyCoTNmTudIP9e8fprLY_Ezp_4o/edit?usp=sharing
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=28e3e24b-6949-4f4e-bc7c-b26d01370e30
   - date: Fri 01/24
     topics: Testing
     items:
