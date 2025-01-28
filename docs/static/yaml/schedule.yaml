@@ -49,6 +49,8 @@
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1uo1ke4YkCc7unw8jPlEryyL_lielXLRANLn6VaRxnIw/edit?usp=sharing
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=73a1a2ad-6046-4b89-8656-b26f0137126d
   - date: Sun 01/26
     assignments:
     - Challenge 01
@@ -62,6 +64,8 @@
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1xs4rf3GnBVoBjUFOlbO-mXU_lq_tRJ7GWPwo1huS0XI/edit?usp=sharing
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e9404e94-d20f-4edd-a73e-b272013628cd
   - date: Wed 01/29
     topics: Sorting
     items:
