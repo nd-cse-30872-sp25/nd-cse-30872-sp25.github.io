@@ -25,5 +25,14 @@ TAs:
       Monday: 5:00 PM - 6:00 PM
       Wednesday: 5:00 PM - 6:00 PM
     oh_location: CSE Commons
+  mhines2:
+    github: mhines2
+    level: Undergraduate
+    name: Michael Hines
+    netid: mhines2
+    office_hours:
+      Monday: 11:00 AM - 12:00 PM
+      Wednesday: 11:00 PM - 12:00 PM
+    oh_location: CSE Commons
 Term: Spring
 Year: '2025'
