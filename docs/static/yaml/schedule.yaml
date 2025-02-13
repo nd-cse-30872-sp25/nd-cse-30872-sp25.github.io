@@ -124,6 +124,11 @@
       link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=40da0c22-20c9-42d1-9bae-b2800137be70
   - date: Wed 02/12
     topics: Permutations, Backtracking
+    items:
+    - name: Slides
+      link: https://docs.google.com/presentation/d/1jlDiEL5PiIXOwY9wHrYnyTHiy_mz3JFd4ceTPVKegtk/edit?usp=sharing
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=58e34600-b003-4c76-9b2f-b2820137946f
   - date: Fri 02/14
     topics: Static Analysis
     items:
