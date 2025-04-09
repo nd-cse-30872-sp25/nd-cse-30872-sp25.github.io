@@ -212,8 +212,13 @@
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1KDy3UVhQn3ehLzoT3tF_WbNcdeoJIL7EPxUTwCOe7Xg/edit?usp=sharing
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=76fa43d1-2cfe-4db8-a6a0-b2a30127a5d2
   - date: Wed 03/19
     topics: Traversal
+    items:
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6c1af790-3c51-4430-82f6-b2a5011f25ef
   - date: Fri 03/21
     topics: Divide and Conquer
   - date: Sun 03/23
@@ -229,8 +234,13 @@
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/16K7s0K-MTjKP_dV3Xy1IovbXNWI_rWvAXW9e87qHOSY/edit?usp=sharing
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ac1c2eb-bc1a-4f2b-890b-b2aa0125b229
   - date: Wed 03/26
     topics: Traversal
+    items:
+    - name: Panopto
+      link: https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd159d20-114e-4cb4-b5cf-b2ac0127102c
   - date: Fri 03/28
     topics: Shortest Paths
   - date: Sun 03/30
@@ -266,39 +276,39 @@
   - date: Wed 04/09
     topics: Flows and Cuts
   - date: Fri 04/11
-    topics: Cancelled (Easter) 
+    topics: Challenge Day
+  - date: Sun 04/13
+    assignments:
+    - Challenge 19
+    - Challenge 20
   
 - name: Number Theory
   days:
   - date: Mon 04/14
-    topics: Cancelled (Easter)
+    topics: Primes and Modular Arithmetic
     assignments:
     - Reading 11
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/18FUyj3TUK_iRIZTycIo81albN0PETbKP5Qe1RLQ1b2A/edit?usp=sharing
   - date: Wed 04/16
-    topics: Primes and Modular Arithmetic
-  - date: Fri 04/18
     topics: Challenge Day
-  - date: Sun 04/20
-    assignments:
-    - Challenge 19
-    - Challenge 20
+  - date: Fri 04/18
+    topics: Cancelled (Easter)
 - name: Miscellaneous
   days:
   - date: Mon 04/21
+    topics: Cancelled (Easter)
+  - date: Wed 04/23
     topics: Negotiation, Contracts, Promotion, Mobility
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1Kw1IQd4tV09dVJkK6aKlzmF6_3C__fApHDL9ng9tdps/edit?usp=sharing
-  - date: Wed 04/23
+  - date: Fri 04/25
     topics: Graduate School
     items:
     - name: Slides
       link: https://docs.google.com/presentation/d/1GfAQZrceqC3xnbOIR7dBi7NvV2E6eayU/edit?usp=sharing&ouid=111601855049772661603&rtpof=true&sd=true
-  - date: Fri 04/25
-    topics: Challenge Day
   - date: Sun 04/27
     assignments:
     - Challenge 21
